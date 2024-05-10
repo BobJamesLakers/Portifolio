@@ -70,20 +70,16 @@ h2 {
     max-width: 25%;
     box-shadow: 0 0 10px rgb(255, 255, 255);
     margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.projeto-item:hover {
+    transform: scale(1.04);
 }
 
 .projeto-item img {
     max-width: 100%;
     height: auto;
-}
-
-.projeto-item img:hover {
-    transform: scale(1.04);
-    transition: transform 0.2s ease;
-}
-
-.projeto-item p {
-    text-align: justify;
 }
 
 footer {
@@ -92,21 +88,5 @@ footer {
     color: #FFD700;
     text-align: center;
     padding: 10px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-}
-
-.caixa-home-foot a {
-    color: #FFD700;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header a {
-    color: #FFD700;
-    text-decoration: none;
-}
-
-header a:hover {
-    color: #FFD700;
-    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(255, 255, 255)
 }
