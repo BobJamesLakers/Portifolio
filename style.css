@@ -285,7 +285,7 @@ footer {
     color: #FFD700;
 }
 
-/* Animação de flutuar As Imgs P3,P2*/
+/* Animação de flutuar As Imgs P3,P2
 
 @keyframes flutuar {
     0% {
@@ -295,3 +295,4 @@ footer {
         transform: translateY(-20px);
     }
 }
+*/
