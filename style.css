@@ -1,5 +1,4 @@
 /* ESTILO GERAL */
-
 * {
     margin: 0;
     padding: 0;
@@ -34,8 +33,14 @@ body {
     transition: .2s;
 }
 
+/* Titulos h2 */
+
+.txt-sobre{
+    color:#FFD700
+}
+
 h2.titulo {
-    color: #FFD700; /* Amarelo */
+    color: #ffd900; /* Amarelo */
     font-size: 38px;
     text-align: center;
 }
@@ -148,7 +153,7 @@ section.sobre {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #800080; /* Roxo */
+    color: #800080;/* Roxo */
     display: block;
 }
 
@@ -158,20 +163,23 @@ section.sobre {
     color:#fff;
 }
 
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #800080; /* Roxo */
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
+.btn-social {
+    display: flex;
+    gap: 10px;
 }
 
-.img-sobre {
-    animation: flutuar 2s ease-in-out infinite alternate;
+.btn-social a {
+    display: inline-block;
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    border-radius: 50%; /* Borda circular */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o tamanho do botão */
+}
+
+.btn-social a img {
+    width: 100%; /* Preenche o botão horizontalmente */
+    height: 100%; /* Preenche o botão verticalmente */
+    object-fit: cover; /* Redimensiona a imagem para cobrir o botão */
 }
 
 /* ESTILO DO PORTFÓLIO IMGS/DESCR */
@@ -210,6 +218,11 @@ section.portifolio {
 
 .portifolio p {
     color:#fff;
+
+}
+
+h3 {
+    color:#fff
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
@@ -267,23 +280,29 @@ footer {
     box-shadow: 0 0 40px 10px #FFD700;
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Para centralizar verticalmente */
     background-color: #000;
     border-top: 5px solid #FFD700;
     color: #FFD700;
-    text-align: center;
 }
 
 .logo-footer img {
-    max-width: 1000px;
+    max-width: 100px; /* Ajuste conforme o tamanho desejado */
 }
 
 .caixa-home-foot {
     text-align: center;
+    flex-grow: 1; /* Para ocupar o espaço restante */
+}
+
+.caixa-home-foot p {
+    margin: 0; /* Remover margem padrão */
 }
 
 .caixa-home-foot a:hover {
     color: #FFD700;
 }
+
 
 /* Animação de flutuar As Imgs P3,P2
 
